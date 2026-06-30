@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin.html
+Disallow: /admin-calculator.html
+Disallow: /staff.html
+Disallow: /staff-calculator.html
+Disallow: /dashboard.html
+Disallow: /job-dashboard.html
+Disallow: /academy-dashboard.html
+Disallow: /login.html
+Disallow: /signup.html
+Disallow: /user-calculator.html
+Disallow: /certificate.html
+Disallow: /user-banking.html
+Disallow: /user-crypto-exchange.html
+Disallow: /backend/
+Disallow: /node_modules/
+
+Sitemap: https://spworldtech.com/sitemap.xml

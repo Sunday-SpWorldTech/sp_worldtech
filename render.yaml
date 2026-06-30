@@ -1,0 +1,59 @@
+services:
+  - type: web
+    name: sp-worldtech-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: CLIENT_URL
+        value: https://spworldtech.com,https://www.spworldtech.com
+      - key: BACKEND_PUBLIC_URL
+        value: https://sp-worldtech-backend.onrender.com
+      - key: FRONTEND_URL
+        value: https://spworldtech.com
+      - key: OPENWEBNINJA_API_KEY
+        sync: false
+      - key: PAYSTACK_PUBLIC_KEY
+        sync: false
+      - key: PAYSTACK_SECRET_KEY
+        sync: false
+      - key: PAYSTACK_CALLBACK_URL
+        value: https://spworldtech.com/crypto-exchange.html
+      - key: LUNO_API_KEY_ID
+        sync: false
+      - key: LUNO_API_KEY_SECRET
+        sync: false
+      - key: LUNO_API_BASE_URL
+        value: https://api.luno.com/api/1
+      - key: CRYPTO_MARKUP_PERCENT
+        value: 3
+      - key: STROWALLET_PUBLIC_KEY
+        sync: false
+      - key: STROWALLET_API_KEY
+        sync: false
+      - key: STROWALLET_SECRET_KEY
+        sync: false
+      - key: STROWALLET_BASE_URL
+        value: https://strowallet.com
+      - key: STROWALLET_MODE
+        value: live
+      - key: STROWALLET_PRODUCT_ENDPOINTS_JSON
+        sync: false
+
+  - type: static
+    name: sp-worldtech-frontend
+    rootDir: frontend
+    buildCommand: ""
+    staticPublishPath: .
+    envVars:
+      - key: SP_WORLDTECH_API_BASE_URL
+        value: https://sp-worldtech-backend.onrender.com/api
+      - key: SP_WORLDTECH_SITE_URL
+        value: https://spworldtech.com

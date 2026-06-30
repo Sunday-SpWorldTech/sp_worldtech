@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link href="https://spworldtech.com/admin.html" rel="canonical"/>
+<meta content="https://spworldtech.com/admin.html" property="og:url"/>
+<link href="./assets/favicon.png" rel="icon" type="image/png">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Admin from SP WorldTech International Digital Solutions for web applications, software development, digital jobs, academy, wallet services, crypto services, and professional support." name="description"/>
+<title>Admin | SP WorldTech International Digital Solutions</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="./assets/styles.css" rel="stylesheet"/>
+</meta></link><meta content="noindex, nofollow" name="robots"/><meta content="SP WorldTech, SP WorldTech International Digital Solutions, web application development, software development, digital jobs, coding academy, Banking, crypto exchange, Nigeria tech company, remote jobs, fintech platform" name="keywords"/><meta content="Admin | SP WorldTech International Digital Solutions" property="og:title"/><meta content="Admin from SP WorldTech International Digital Solutions for web applications, software development, digital jobs, academy, wallet services, crypto services, and professional support." property="og:description"/><meta content="website" property="og:type"/><meta content="SP WorldTech International Digital Solutions" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="Admin | SP WorldTech International Digital Solutions" name="twitter:title"/><meta content="Admin from SP WorldTech International Digital Solutions for web applications, software development, digital jobs, academy, wallet services, crypto services, and professional support." name="twitter:description"/></head>
+<body class="staff-app" data-dashboard-role="admin">
+<main class="staff-layout">
+<section class="staff-hero enriched-hero">
+<div class="hero-top-row">
+<a aria-label="Back to SP WorldTech home" class="brand brand-link" href="./index.html">
+<img alt="SP WorldTech logo" class="brand-logo" src="./assets/logo.png"/>
+
+</a>
+<a class="ghost-link-btn" href="./pricing.html">Pricing &amp; Roles</a><a class="ghost-link-btn" href="./giftcards.html">GiftCards</a>
+</div>
+<div class="staff-hero-grid">
+<div>
+<span class="eyebrow">Admin Operations</span>
+<h1>Professional admin portal for jobs, applications, wallets, payments, clients, and platform control.</h1>
+<p>Staff support can answer users only. Admin sees jobs, wallets, payments, and revenue. Owner adds service, ENV, and platform settings visibility.</p>
+<a class="plain-link light-plain-link" href="./index.html">Back to user homepage</a>
+</div>
+<div class="hero-side-card">
+<h3>Admin capabilities</h3>
+<ul class="feature-list">
+<li>Monitor user and job activity</li>
+<li>Review applications and withdrawals</li>
+<li>Track wallet totals and pending requests</li>
+<li>Respond to user support messages</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="staff-auth-box calculator-gate-box" id="staffAuthSection">
+<h2>Calculator Access Required</h2>
+<p>Admin, Staff Support, and Owner / Super Admin no longer use email login or signup pages. Open the correct live calculator page, create a PIN, copy the bold Token ID, then use that Token ID for future access.</p>
+<div class="calculator-gate-actions">
+<a class="primary plain-anchor-btn" href="./admin-calculator.html">Admin / Owner Calculator</a>
+<a class="secondary plain-anchor-btn" href="./staff-calculator.html">Staff Support Calculator</a>
+</div>
+<div class="staff-info-box">
+<p><strong>Role lock:</strong> Staff support has no wallet, payment, revenue, SP WorldTech Checkout, Banking finance, or platform settings access. Admin/Owner access requires the admin calculator.</p>
+</div>
+<p class="status-text" id="staffLoginStatus"></p>
+</section>
+<section class="hidden staff-dashboard-wrap" id="staffDashboardSection">
+<div class="dashboard-header modern-dashboard-header">
+<div>
+<span class="eyebrow dark">Operations Dashboard</span>
+<h2 id="staffWelcome">Welcome staff</h2>
+<p id="staffRoleText">Role-based controls enabled.</p>
+</div>
+<div class="dashboard-actions">
+<button class="secondary" id="refreshStaffBtn">Refresh</button>
+<button class="danger" id="staffLogoutBtn">Logout</button>
+</div>
+</div>
+<div class="summary-grid staff-summary-grid">
+<div class="summary-card accent-card"><span>Total Users</span><strong id="staffUsersCount">0</strong></div>
+<div class="summary-card accent-card soft-blue"><span>Total Jobs</span><strong id="staffJobsCount">0</strong></div>
+<div class="summary-card accent-card soft-green"><span>Applications</span><strong id="staffApplicationsCount">0</strong></div>
+<div class="summary-card accent-card soft-purple"><span>Pending Withdrawals</span><strong id="pendingWithdrawalsCount">0</strong></div>
+<div class="summary-card accent-card soft-green"><span>Product Requests</span><strong id="productRequestsCount">0</strong></div>
+</div>
+<div class="admin-ops-command-center">
+  <div class="admin-live-pill"><span class="live-dot"></span><strong id="adminLiveStatusText">Live operations ready</strong><span>Last updated: <b id="adminLastUpdated">--</b></span></div>
+  <div class="admin-quick-actions">
+    <a class="secondary plain-anchor-btn" href="#adminRevenuePanel">Revenue</a>
+    <a class="secondary plain-anchor-btn" href="#tynaTokenForwardPanel">Tyna Token Forward</a>
+    <a class="secondary plain-anchor-btn" href="#adminCryptoManagementPanel">Crypto</a>
+    <a class="secondary plain-anchor-btn" href="#jobManagementFilters">Applications</a>
+  </div>
+</div>
+<div class="dashboard-grid advanced-dashboard-grid">
+<section class="panel full-span" id="adminRevenuePanel">
+<div class="panel-head">
+<div>
+<h3>Admin / Owner Wallet &amp; Revenue Control</h3>
+<p>Admin sees full client payment records, internal payout totals, and transaction charges. Workers only see approved SP Token voucher payout amounts.</p>
+</div>
+</div>
+<div class="stat-grid wallet-stat-grid admin-wallet-grid">
+<div class="stat-box highlighted-box"><span>Admin USD Balance</span><strong id="adminUsdBalance">$0.00</strong></div>
+<div class="stat-box highlighted-box"><span>Admin Job Revenue</span><strong id="adminJobRevenue">$0.00</strong></div>
+<div class="stat-box highlighted-box"><span>Transaction Charges</span><strong id="adminTransactionCharges">$0.00</strong></div>
+<div class="stat-box highlighted-box"><span>Banking Product Fees</span><strong id="adminProductFees">$0 / ₦0</strong></div>
+</div>
+</section>
+
+<section class="panel full-span" id="tynaTokenForwardPanel">
+<div class="panel-head">
+<div>
+<h3>Tyna Systems Secure Balance Token</h3>
+<p>Paste the secure token created inside Tyna Systems developer dashboard. SP WorldTech verifies it through the backend and auto-forwards approved balance into the admin wallet.</p>
+</div>
+<button class="secondary" id="refreshTynaTokenBtn" type="button">Refresh Token Status</button>
+</div>
+<form class="inline-form column-form" id="tynaTokenConnectForm">
+<input id="tynaTransferTokenInput" name="token" placeholder="Paste Tyna Systems transfer token" type="password" autocomplete="off" required/>
+<div class="inline-form">
+<button class="primary" type="submit">Connect &amp; Auto Forward</button>
+<button class="secondary" id="manualForwardTynaBtn" type="button">Auto Forward Now</button>
+</div>
+</form>
+<p class="status-text" id="tynaTokenStatus">No Tyna Systems token connected yet.</p>
+<div class="stack-list" id="tynaTransfersList"></div>
+</section>
+
+<section class="panel full-span" id="adminCryptoManagementPanel">
+<div class="panel-head">
+<div>
+<h3>SP WorldTech Crypto Management</h3>
+<p>Monitor market-backed markets, secure deposits, buy/sell orders, withdrawals, and the SP WorldTech 3% service fees.</p>
+</div>
+<a class="primary plain-anchor-btn" href="./crypto-exchange.html">Open Crypto Dashboard</a>
+</div>
+<div class="stat-grid wallet-stat-grid admin-wallet-grid">
+<div class="stat-box highlighted-box"><span>Crypto Orders</span><strong id="adminCryptoOrdersCount">Ready</strong></div>
+<div class="stat-box highlighted-box"><span>Pending Withdrawals</span><strong id="adminCryptoWithdrawalsCount">Review</strong></div>
+<div class="stat-box highlighted-box"><span>SP WorldTech Fees</span><strong id="adminCryptoFees">3%</strong></div>
+<div class="stat-box highlighted-box"><span>Crypto / Payments</span><strong id="adminCryptoProviderStatus">Setup Pending</strong></div>
+</div>
+<div class="stack-list compact-stack">
+<div class="mini-card"><div><strong>Admin management tools</strong><p>Crypto orders and withdrawal review tools are available for admin management.</p></div></div>
+<div class="mini-card"><div><strong>Safe processing rule</strong><p>No crypto order or withdrawal is marked successful until payment and crypto provider platform confirmation exists.</p></div></div>
+</div>
+</section>
+<section class="panel">
+<h3>Recent Transactions</h3>
+<div class="stack-list" id="staffTransactionsList"></div>
+</section>
+<section class="panel">
+<h3>Jobs Overview</h3>
+<div class="stack-list" id="staffJobsList"></div>
+</section>
+<section class="panel full-span admin-job-management-panel">
+<h3>Professional Job Management</h3>
+<p>Review applications, resumes, cover letters, portfolio links, AI client outreach, client tracking, notifications, and Job activity logs.</p>
+<div class="inline-form" id="jobManagementFilters"><input id="adminApplicationSearch" placeholder="Search applicants, jobs, companies"/><select id="adminApplicationStatusFilter"><option value="">All statuses</option><option>Submitted</option><option>Under Review</option><option>Contacting Client</option><option>Client Responded</option><option>Interview</option><option>Accepted</option><option>Rejected</option><option>Closed</option></select></div>
+<div class="stack-list" id="staffApplicationsList"></div>
+</section>
+<section class="panel full-span admin-client-tracking-panel">
+<h3>Client Tracking</h3>
+<div class="stack-list" id="clientContactsList"></div>
+</section>
+<section class="panel full-span admin-ai-message-panel">
+<h3>AI Client Outreach Messages</h3>
+<p>AI generates professional messages only. Admin must review, edit, and send manually. No resumes, cover letters, or portfolios are sent automatically.</p>
+<div class="stack-list" id="aiMessagesList"></div>
+</section>
+<section class="panel full-span admin-job-logs-panel">
+<h3>Job Notifications &amp; Activity Logs</h3>
+<div class="stack-list" id="jobNotificationsList"></div>
+<div class="stack-list" id="jobActivityLogsList"></div>
+</section>
+<section class="panel">
+<h3>Withdrawal Requests</h3>
+<div class="stack-list" id="withdrawalsList"></div>
+</section>
+<section class="panel">
+<h3>Banking Product Requests</h3>
+<div class="stack-list" id="staffProductRequestsList"></div>
+</section>
+
+<section class="panel full-span admin-giftcard-management-panel">
+<div class="panel-head">
+<div>
+<h3>GiftCards Order Management</h3>
+<p>Review wallet-paid GiftCard purchases, process fulfilment, and update order status. Users fund wallets by redeeming SP Token Voucher first.</p>
+</div>
+<a class="secondary plain-anchor-btn" href="./giftcards.html">Open GiftCards Store</a>
+</div>
+<div class="stack-list" id="adminGiftCardOrdersList"></div>
+</section>
+<section class="panel full-span">
+<div class="panel-head">
+<div>
+<h3>AI Coding Academy Management</h3>
+<p>Admin can monitor academy readiness, certificate workflow, AI tutor provider settings, and public course presentation.</p>
+</div>
+<a class="secondary plain-anchor-btn" href="./academy.html">Open Academy</a>
+</div>
+<div class="cards-grid compact-academy-grid">
+<div class="mini-card"><strong>🌐 Starter Courses</strong><div class="job-meta">HTML, CSS, JavaScript, Git &amp; GitHub</div></div>
+<div class="mini-card"><strong>⚛️ Professional Courses</strong><div class="job-meta">React, Node.js, MongoDB, Python, Django</div></div>
+<div class="mini-card"><strong>🧠 Advanced Courses</strong><div class="job-meta">C++, C#, .NET, AI Prompt Engineering</div></div>
+<div class="mini-card"><strong>🏅 Certificates</strong><div class="job-meta">Unique certificate ID and verification page included.</div></div>
+</div>
+</section>
+<section class="panel full-span hidden" id="ownerPlatformSettings"></section>
+<section class="panel chat-panel">
+<h3>User Support Chat</h3>
+<div class="chat-messages" id="staffChatMessages"></div>
+<form class="inline-form" id="staffChatForm">
+<input name="message" placeholder="Reply to users" required="" type="text"/>
+<button class="primary" type="submit">Send Reply</button>
+</form>
+</section>
+</div>
+</section>
+<section class="content-section"><div class="container"><div class="panel"><h2>AI Client Message Generator</h2><p>Generate professional welcome, thank-you, payment, and project update messages for clients. SP WorldTech AI assistant ready.</p><form class="inline-form column-form" id="aiClientMessageForm"><input name="clientName" placeholder="Client name"/><input name="jobTitle" placeholder="Project or job title"/><select name="messageType"><option>welcome</option><option>thank_you</option><option>payment_confirmation</option><option>project_update</option></select><button class="primary" type="submit">Generate Message</button></form><div class="ai-message-box" id="aiClientMessageOutput">AI message will appear here.</div></div></div></section><section class="content-section"><div class="container"><div class="panel"><h2>Admin AI Assistant</h2><p>Use AI to draft professional support replies, partner support messages, and client communication. Drafts must be reviewed before sending.</p><form class="inline-form column-form" data-admin-ai-form="" data-output="adminAiOutput"><select name="draftType"><option value="support-reply">Support Reply</option><option value="partner-support-message">Partner Support Message</option><option value="client-message">Client Message</option><option value="complaint-summary">Complaint Summary</option></select><textarea name="message" placeholder="Paste user issue, client context, service issue, or support ticket details" required=""></textarea><button class="primary" type="submit">Generate AI Draft</button></form><pre class="ai-output" id="adminAiOutput">AI draft will appear here. Approve manually before sending.</pre></div></div></section></main>
+<footer class="site-footer staff-footer">
+<div class="container footer-grid">
+<div class="footer-brand-block">
+<div class="footer-brand-wrap">
+<img alt="SP WorldTech logo" class="footer-logo" src="./assets/logo.png"/>
+<div class="footer-brand">SP WorldTech International Digital Solutions</div>
+</div>
+<p>
+          Central workspace for staff support, admin control, and owner/super admin settings with protected access.
+        </p>
+<div class="footer-badges">
+<span>Admin Control</span>
+<span>Support Operations</span>
+<span>Protected Access</span>
+</div>
+</div>
+<div>
+<h4>Portal Links</h4>
+<ul class="footer-links">
+<li><a href="./index.html">User Homepage</a></li>
+<li><a href="./staff-calculator.html">Staff Calculator</a></li>
+<li><a href="#staffDashboardSection">Dashboard</a></li>
+</ul>
+</div>
+<div>
+<h4>Functions</h4>
+<ul class="footer-links">
+<li><a href="#staffDashboardSection">Jobs Overview</a></li>
+<li><a href="#staffDashboardSection">Applications Review</a></li>
+<li><a href="#staffDashboardSection">Admin Wallet Review</a></li>
+<li><a href="#staffDashboardSection">Support Chat</a></li>
+</ul>
+</div>
+<div>
+<h4>Support</h4>
+<ul class="footer-contact">
+<li><strong>Email:</strong> support@spworldtech.com</li>
+<li><strong>Roles:</strong> Staff Support / Admin / Owner calculator access</li>
+<li><strong>System:</strong> SP WorldTech Operations</li>
+<li><strong>Status:</strong> Deployment Ready</li>
+</ul>
+</div>
+<div class="footer-contact-card"><h4>Contact SP WorldTech</h4><p><strong>Phone:</strong> <a href="tel:+2349129193069">+2349129193069</a></p><p><strong>Email:</strong> <a href="mailto:support@spworldtech.com">support@spworldtech.com</a></p><p>Web Applications, Software Development, Digital Jobs, AI Academy, Banking, and Crypto Services.</p></div></div>
+<div class="footer-bottom">
+<div class="container footer-bottom-wrap">
+<p>© 2026 SP WorldTech Admin Portal.</p>
+<p>Professional role-based operations for platform management and support.</p>
+</div>
+</div>
+</footer>
+<script src="./assets/config.js"></script>
+<script src="./assets/staff.js"></script>
+<script src="./assets/admin-staff-ai.js"></script>
+<script src="./assets/support-chat.js"></script>
+</body>
+</html>

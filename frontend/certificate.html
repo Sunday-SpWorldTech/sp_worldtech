@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link href="https://spworldtech.com/certificate.html" rel="canonical"/>
+<meta content="https://spworldtech.com/certificate.html" property="og:url"/>
+<link href="./assets/favicon.png" rel="icon" type="image/png">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Certificate | SP WorldTech International Digital Solutions</title>
+<link href="./assets/styles.css" rel="stylesheet"/>
+</meta></link><meta content="Certificate from SP WorldTech International Digital Solutions for web applications, software development, digital jobs, academy, wallet services, crypto services, and professional support." name="description"/><meta content="noindex, nofollow" name="robots"/><meta content="SP WorldTech, SP WorldTech International Digital Solutions, web application development, software development, digital jobs, coding academy, Banking, crypto exchange, Nigeria tech company, remote jobs, fintech platform" name="keywords"/><meta content="Certificate | SP WorldTech International Digital Solutions" property="og:title"/><meta content="Certificate from SP WorldTech International Digital Solutions for web applications, software development, digital jobs, academy, wallet services, crypto services, and professional support." property="og:description"/><meta content="website" property="og:type"/><meta content="SP WorldTech International Digital Solutions" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="Certificate | SP WorldTech International Digital Solutions" name="twitter:title"/><meta content="Certificate from SP WorldTech International Digital Solutions for web applications, software development, digital jobs, academy, wallet services, crypto services, and professional support." name="twitter:description"/></head>
+<body>
+<main class="certificate-page-wrap">
+<section class="certificate-card panel">
+<div class="certificate-logo-row"><img alt="SP WorldTech logo" class="brand-logo" src="./assets/logo.png"/><span>SP WorldTech AI Coding Academy</span></div>
+<h1>Certificate Verification</h1>
+<p>Enter a certificate ID to verify authenticity.</p>
+<form class="inline-form" id="verifyCertificateForm"><input id="certificateIdInput" name="certificateId" placeholder="SPW-ACA-XXXX-XXXX" required=""/><button class="primary" type="submit">Verify</button></form>
+<div class="certificate-result" id="certificateResult"></div>
+<a class="ghost-link-btn" href="./academy.html">Back to Academy</a>
+</section>
+</main>
+<script src="./assets/config.js"></script>
+<script>
+    const service_BASE = window.APP_CONFIG.service_BASE_URL;
+    const qs = new URLSearchParams(location.search); const input = document.getElementById('certificateIdInput'); if(qs.get('id')) input.value = qs.get('id');
+    async function verify(id){ const box=document.getElementById('certificateResult'); box.innerHTML='Checking...'; try{ const res=await fetch(`${service_BASE}/academy/certificate/${encodeURIComponent(id)}`); const data=await res.json(); if(!res.ok) throw new Error(data.message||'Not found'); const c=data.certificate; box.innerHTML=`<div class="valid-certificate"><h2>Verified Certificate</h2><p><strong>${c.fullName}</strong> completed <strong>${c.courseTitle}</strong>.</p><p>Certificate ID: ${c.certificateId}</p><p>Issued: ${new Date(c.issuedAt).toLocaleDateString()}</p></div>`;}catch(e){box.innerHTML=`<div class="invalid-certificate">${e.message}</div>`}}
+    document.getElementById('verifyCertificateForm').addEventListener('submit', e=>{e.preventDefault(); verify(input.value.trim())}); if(input.value) verify(input.value);
+  </script>
+<script src="./assets/support-chat.js"></script>
+</body>
+</html>

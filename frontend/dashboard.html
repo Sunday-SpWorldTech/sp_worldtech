@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link href="https://spworldtech.com/dashboard.html" rel="canonical"/>
+<meta content="https://spworldtech.com/dashboard.html" property="og:url"/>
+<link href="./assets/favicon.png" rel="icon" type="image/png">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Dashboard from SP WorldTech International Digital Solutions for web applications, software development, digital jobs, academy, wallet services, crypto services, and professional support." name="description"/>
+<title>Dashboard | SP WorldTech International Digital Solutions</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="./assets/styles.css" rel="stylesheet"/>
+</meta></link><meta content="noindex, nofollow" name="robots"/><meta content="SP WorldTech, SP WorldTech International Digital Solutions, web application development, software development, digital jobs, coding academy, Banking, crypto exchange, Nigeria tech company, remote jobs, fintech platform" name="keywords"/><meta content="Dashboard | SP WorldTech International Digital Solutions" property="og:title"/><meta content="Dashboard from SP WorldTech International Digital Solutions for web applications, software development, digital jobs, academy, wallet services, crypto services, and professional support." property="og:description"/><meta content="website" property="og:type"/><meta content="SP WorldTech International Digital Solutions" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="Dashboard | SP WorldTech International Digital Solutions" name="twitter:title"/><meta content="Dashboard from SP WorldTech International Digital Solutions for web applications, software development, digital jobs, academy, wallet services, crypto services, and professional support." name="twitter:description"/></head>
+<body class="dashboard-page">
+<div class="app-shell">
+<aside class="dashboard-sidebar">
+<a class="brand brand-link dashboard-brand" href="./index.html">
+<img alt="SP WorldTech logo" class="brand-logo" src="./assets/logo.png"/>
+
+</a>
+<nav class="dashboard-nav">
+<a class="active" data-dashboard-section="overview" href="#overview">Overview</a>
+<a data-dashboard-section="jobs-panel" href="#jobs-panel">Jobs</a>
+<a data-dashboard-section="academy-panel" href="#academy-panel">Academy</a>
+<a data-dashboard-section="wallet-panel" href="#wallet-panel">Wallet</a>
+<a data-dashboard-section="giftcards-panel" href="#giftcards-panel">GiftCards</a>
+<a data-dashboard-section="products-panel" href="#products-panel">Banking</a>
+<a data-dashboard-section="crypto-panel" href="#crypto-panel">CryptoCurrency</a>
+<a data-dashboard-section="applications-panel" href="#applications-panel">Applications</a>
+<a data-dashboard-section="support-panel" href="#support-panel">Support</a>
+<a href="./index.html">Back Home</a>
+</nav>
+<div class="sidebar-card">
+<span class="eyebrow">Auto Jobs service</span>
+<p>Dashboard loads real SP WorldTech Job Research service listings securely.</p>
+</div>
+<div class="dashboard-user-logout-card" aria-label="User session controls">
+<div class="dashboard-user-mini">
+<span class="dashboard-user-avatar">SP</span>
+<div>
+<strong id="dashboardSidebarName">UserAccess</strong>
+<small id="dashboardSidebarEmail">Secure dashboard session</small>
+</div>
+</div>
+<button class="dashboard-logout-btn" id="logoutBtn" type="button">Logout</button>
+</div>
+</aside>
+<main class="dashboard-main">
+<header class="dashboard-topbar dashboard-hero-banner">
+<div class="dashboard-hero-overlay"></div>
+<div class="dashboard-hero-content">
+<span class="eyebrow">SP WORLD TECH USER COMMAND CENTER</span>
+<h1 id="dashboardWelcome">Welcome to SP WorldTech</h1>
+<p>Manage auto jobs, wallet balances, Banking account/card requests, airtime, data subscription, applications, and staff support in one professional dashboard.</p>
+</div>
+<div class="dashboard-actions dashboard-hero-actions">
+<button class="secondary" id="refreshDashboardBtn">Refresh</button>
+</div>
+</header>
+<section class="panel auth-required-panel hidden" id="authRequired">
+<h2>UserAccess access required</h2>
+<p>Please login with your username, password and PIN before opening the dashboard.</p>
+<a class="primary plain-anchor-btn" href="./login.html">Open UserAccess</a>
+</section>
+<section class="dashboard-content" id="overview">
+<div class="summary-grid dashboard-summary-grid dashboard-switch-panel" id="dashboardOverviewPanel">
+<div class="summary-card accent-card"><span>Available Jobs</span><strong id="jobsCount">0</strong></div>
+<div class="summary-card accent-card soft-blue"><span>Applications</span><strong id="applicationsCount">0</strong></div>
+<div class="summary-card accent-card soft-green"><span>Support Messages</span><strong id="messagesCount">0</strong></div>
+<div class="summary-card accent-card soft-purple"><span>SP Token Payouts</span><strong id="visibleEarningsSummary">$0.00</strong></div>
+<div class="summary-card accent-card soft-gold"><span>Academy Certificates</span><strong id="certificatesCount">0</strong></div>
+<a class="summary-card accent-card soft-blue plain-anchor-btn" data-dashboard-section="jobs-panel" href="#jobs-panel"><span>Jobs</span><strong>Open</strong></a>
+<a class="summary-card accent-card soft-green plain-anchor-btn" data-dashboard-section="academy-panel" href="#academy-panel"><span>Academy</span><strong>Open</strong></a>
+<a class="summary-card accent-card soft-gold plain-anchor-btn" data-dashboard-section="giftcards-panel" href="#giftcards-panel"><span>GiftCards</span><strong>Open</strong></a>
+<a class="summary-card accent-card soft-blue plain-anchor-btn" data-dashboard-section="crypto-panel" href="#crypto-panel" id="cryptoDashboardSummary"><span>CryptoCurrency</span><strong>Open</strong></a>
+</div>
+<section class="panel wallet-panel full-width-panel dashboard-switch-panel hidden" id="wallet-panel">
+<div class="panel-head">
+<div>
+<h2>Wallet Overview</h2>
+<p>Paid job rewards are issued as SP Token vouchers. Redeem the token into your USD/NGN wallet balance first, then withdraw or use the balance for platform services.</p>
+</div>
+</div>
+<div class="stat-grid wallet-stat-grid">
+<div class="stat-box highlighted-box"><span>USD Balance</span><strong id="walletUsd">$0.00</strong></div>
+<div class="stat-box highlighted-box"><span>NGN Balance</span><strong id="walletNgn">₦0.00</strong></div>
+<div class="stat-box highlighted-box"><span>Pending/Legacy Earnings</span><strong id="visibleEarnings">$0.00</strong></div>
+</div>
+<div class="mini-card sp-token-wallet-card" style="margin:16px 0"><strong>SP Token deposit, paid job, and withdrawal flow</strong><div class="job-meta">Admin-paid jobs create SP Token vouchers. Redeem the voucher into wallet balance, then withdraw whenever you want or use the money for platform services. SP Token is separate from the GiftCards marketplace.</div><div class="dashboard-actions"><a class="secondary plain-anchor-btn" href="./giftcards.html">Open GiftCards Store</a></div></div>
+<div class="dashboard-two-column sp-token-actions-grid">
+<section class="mini-card sp-token-action-card">
+<h3>Deposit with SP Token</h3>
+<p class="job-meta">Choose amount, pay with Paystack, then verify the payment to reveal your one-time SP Token code and redeem it into wallet balance.</p>
+<form class="inline-form" id="spTokenDepositForm">
+<select name="currency" required><option value="NGN">NGN</option><option value="USD">USD</option></select>
+<input min="1" name="amount" placeholder="Deposit amount" required step="0.01" type="number"/>
+<button class="primary" type="submit">Create Deposit Token</button>
+</form>
+<form class="inline-form" id="spTokenVerifyForm">
+<input name="reference" placeholder="Paystack reference" required/>
+<button class="secondary" type="submit">Verify Payment</button>
+</form>
+<form class="inline-form" id="spTokenRedeemForm">
+<input name="code" placeholder="Enter SP Token code" required/>
+<button class="primary" type="submit">Redeem SP Token</button>
+</form>
+</section>
+<section class="mini-card sp-token-action-card">
+<h3>Withdraw with SP Token</h3>
+<p class="job-meta">Withdraw from redeemed wallet balance. Withdrawal requests generate an SP Token tracking code for admin payout verification.</p>
+<form class="inline-form" id="withdrawForm">
+<select name="currency"><option value="USD">USD</option><option value="NGN">NGN</option></select>
+<input min="1" name="amount" placeholder="Withdrawal amount" required="" step="0.01" type="number"/>
+<input name="channel" placeholder="Bank name, account number, or payout channel" required="" type="text"/>
+<button class="primary" type="submit">Request Withdrawal Token</button>
+</form>
+</section>
+</div>
+<div class="mini-card sp-token-output-card"><strong>SP Token result</strong><pre class="ai-output compact-output" id="spTokenOutput">Deposit, paid job, and withdrawal token details will appear here.</pre></div>
+<div class="stack-list" id="spTokenHistoryList"></div>
+<p class="status-text" id="withdrawStatus"></p>
+</section>
+<div class="dashboard-two-column">
+<section class="panel dashboard-switch-panel hidden" id="jobs-panel">
+<h2>Remote Tech Job Opportunities</h2>
+<p>Real jobs are loaded from SP WorldTech through SP WorldTech. Apply inside SP WorldTech so your application can be reviewed before any client contact.</p>
+<form class="inline-form" id="remoteJobSearchForm"><input name="q" placeholder="Search title, company, skill or location" value="remote software developer"/><button class="primary" type="submit">Search Jobs</button></form>
+<div class="stack-list" id="dashboardJobs"></div>
+<h3>Saved Jobs</h3>
+<div class="stack-list" id="savedJobsList"></div>
+</section>
+<section class="panel dashboard-switch-panel hidden" id="applications-panel">
+<h2>My Applications</h2>
+<p>Track every application status from Submitted to Closed. SP WorldTech reviews applications internally before client outreach.</p>
+<div class="stack-list" id="applicationsList"></div>
+</section>
+</div>
+<div class="dashboard-two-column">
+<section class="panel dashboard-switch-panel hidden" id="products-panel">
+<h2>Professional Banking, Cards, Airtime &amp; Data</h2>
+<p>Nigeria/USA virtual account and virtual card request flow. Live provider creation starts after Banking service credentials and KYC approval are configured.</p>
+<div class="stack-list compact-stack product-stack">
+<a class="mini-card product-card product-green product-card-link" href="#products-panel" data-dashboard-section="products-panel" data-product-type="Nigeria Virtual Bank Account"><div><span class="product-icon">🏦</span><strong>Nigeria Virtual Bank Account</strong></div><span>Free</span></a>
+<a class="mini-card product-card product-purple product-card-link" href="#products-panel" data-dashboard-section="products-panel" data-product-type="USA Virtual Bank Account"><div><span class="product-icon">🌍</span><strong>USA Virtual Bank Account</strong></div><span>$10 fee</span></a>
+<a class="mini-card product-card product-blue product-card-link" href="#products-panel" data-dashboard-section="products-panel" data-product-type="USA Virtual Card"><div><span class="product-icon">💳</span><strong>USA Virtual Card</strong></div><span>$5 fee</span></a>
+<a class="mini-card product-card product-gold product-card-link" href="#products-panel" data-dashboard-section="products-panel" data-product-type="Nigeria Virtual Card"><div><span class="product-icon">💳</span><strong>Nigeria Virtual Card</strong></div><span>₦1,000 fee</span></a>
+<a class="mini-card product-card product-dark product-card-link" href="#products-panel" data-dashboard-section="products-panel" data-product-type="Naira Physical Card"><div><span class="product-icon">🏧</span><strong>Naira Physical Card</strong></div><span>₦3,000 fee</span></a>
+<a class="mini-card product-card product-blue product-card-link" href="#products-panel" data-dashboard-section="products-panel" data-product-type="Airtime Top-up"><div><span class="product-icon">📱</span><strong>Airtime Top-up</strong></div><span>MTN, Airtel, Glo, 9mobile</span></a>
+<a class="mini-card product-card product-green product-card-link" href="#products-panel" data-dashboard-section="products-panel" data-product-type="Data Subscription"><div><span class="product-icon">🌐</span><strong>Data Subscription</strong></div><span>Provider plan request</span></a>
+<div class="mini-card product-card product-purple"><div><span class="product-icon">💸</span><strong>Fund Transfer</strong></div><span>Banking workflow</span></div>
+<a class="mini-card product-card product-blue product-card-link" href="#products-panel" data-dashboard-section="products-panel" data-product-type="Bill Payments"><div><span class="product-icon">🧾</span><strong>Bill Payments</strong></div><span>Bills, airtime, data</span></a>
+<div class="mini-card product-card product-dark"><div><span class="product-icon">🔁</span><strong>My Subscription</strong></div><span>Renewals</span></div>
+<div class="mini-card product-card product-green"><div><span class="product-icon">🏢</span><strong>Business Operations</strong></div><span>Business tools</span></div>
+<div class="mini-card product-card product-gold"><div><span class="product-icon">🛒</span><strong>My Merchants</strong></div><span>Merchant tools</span></div>
+<a class="mini-card product-card product-purple product-card-link" data-dashboard-section="crypto-panel" href="#crypto-panel"><div><span class="product-icon">₿</span><strong>CryptoCurrency</strong></div><span>Crypto &amp; Payments</span></a>
+<div class="mini-card product-card product-blue"><div><span class="product-icon">🎧</span><strong>Support Ticket</strong></div><span>Provider support</span></div>
+</div>
+<form class="product-application-form product-request-form" id="cardRequestForm">
+<select name="productType" required="">
+<option value="">Choose product</option>
+<option value="Nigeria Virtual Bank Account">Nigeria Virtual Bank Account</option>
+<option value="USA Virtual Bank Account">USA Virtual Bank Account</option>
+<option value="Nigeria Virtual Card">Nigeria Virtual Card</option>
+<option value="USA Virtual Card">USA Virtual Card</option>
+<option value="Naira Physical Card">Naira Physical Card</option>
+<option value="Airtime Top-up">Airtime Top-up</option>
+<option value="Data Subscription">Data Subscription</option>
+<option value="Fund Transfer">Fund Transfer</option>
+<option value="Bill Payments">Bill Payments</option>
+<option value="My Subscription">My Subscription</option>
+<option value="Business Operations">Business Operations</option>
+<option value="My Merchants">My Merchants</option>
+<option value="Virtual Accounts">Virtual Accounts</option>
+<option value="Support Ticket">Support Ticket</option>
+</select>
+<input name="firstName" placeholder="First name" required=""/>
+<input name="lastName" placeholder="Last name" required=""/>
+<input name="phone" placeholder="Phone number" required=""/>
+<input name="dateOfBirth" placeholder="Date of birth" type="date"/>
+<select name="country" required="">
+<option value="">Country</option>
+<option value="Nigeria">Nigeria</option>
+<option value="United States">United States</option>
+<option value="Other">Other</option>
+</select>
+<input name="state" placeholder="State"/>
+<input name="city" placeholder="City"/>
+<input name="address" placeholder="Residential address"/>
+<input name="postalCode" placeholder="Postal / ZIP code"/>
+<select name="identityType">
+<option value="">Identity type for KYC</option>
+<option value="BVN">BVN</option>
+<option value="NIN">NIN</option>
+<option value="Passport">Passport</option>
+<option value="Driver License">Driver License</option>
+</select>
+<input name="identityNumber" placeholder="Identity number / BVN / NIN"/>
+<select name="network">
+<option value="">Network for airtime/data</option>
+<option value="MTN">MTN</option>
+<option value="Airtel">Airtel</option>
+<option value="Glo">Glo</option>
+<option value="9mobile">9mobile</option>
+</select>
+<input name="billPhone" placeholder="Airtime/data phone number"/>
+<input name="dataPlan" placeholder="Data plan e.g. 5GB / 30 days"/>
+<button class="primary product-submit-btn" type="submit">Submit Banking Request</button>
+</form>
+<p class="status-text" id="cardRequestStatus"></p>
+<div class="stack-list" id="productRequestsList"></div>
+</section>
+
+<section class="panel dashboard-switch-panel hidden" id="giftcards-panel">
+<div class="panel-head"><div><h2>GiftCards Marketplace</h2><p>Search and buy GiftCards using wallet balance. Fund wallet first by redeeming SP Token Voucher.</p></div><a class="secondary plain-anchor-btn" href="./giftcards.html">Open GiftCards Store</a></div>
+<div class="giftcard-dashboard-grid">
+  <article class="giftcard-display-card compact-card"><div class="giftcard-shine"></div><div class="giftcard-top"><strong>SP WORLDTECH</strong><span>LIVE API</span></div><div class="giftcard-center"><span>GiftCards</span><h3>Digital Store</h3><p>OpenWebNinja products</p></div><div class="giftcard-bottom"><span>Wallet → GiftCards</span><strong>Codes / Pins</strong></div></article>
+  <div class="stack-list">
+    <div class="mini-card"><strong>Real gift card sales</strong><div class="job-meta">OpenWebNinja GiftCards callbacks are connected from backend environment. Users buy with wallet balance only.</div></div>
+    <div class="mini-card"><strong>Wallet payment</strong><div class="job-meta">Users fund wallet by SP Token deposit, then buy cards from balance.</div></div>
+    <div class="mini-card"><strong>Country and brand support</strong><div class="job-meta">Supported countries and brands come from your live provider API.</div></div>
+  </div>
+</div>
+<div class="dashboard-actions"><a class="primary plain-anchor-btn" href="./giftcards.html#shop">Shop GiftCards</a><a class="secondary plain-anchor-btn" href="#wallet-panel" data-dashboard-section="wallet-panel">Fund Wallet with SP Token</a></div>
+</section>
+
+<section class="panel dashboard-switch-panel hidden" id="academy-panel">
+<div class="panel-head"><div><h2>SP WorldTech AI Coding Academy</h2><p>AI-supported academic learning with lessons, quizzes, assignments, final projects, progress tracking and certificate verification.</p></div><a class="secondary plain-anchor-btn" href="./academy.html">Public Academy Page</a></div>
+<div class="cards-grid academy-course-grid compact-academy-grid" id="dashboardAcademyCourses"></div>
+<div class="ai-tutor-box">
+<h3>AI Tutor</h3>
+<form class="product-application-form" id="aiTutorForm">
+<select id="aiTutorCourseSelect" name="courseId" required=""><option value="">Choose course</option></select>
+<input name="topic" placeholder="Topic e.g. JavaScript Promise, HTML form, React state"/>
+<select name="promptType"><option value="lesson">Generate Lesson</option><option value="quiz">Generate Quiz</option><option value="assignment">Generate Assignment</option><option value="project">Generate Final Project</option></select>
+<button class="primary" type="submit">Ask AI Tutor</button>
+</form>
+<pre class="ai-output" id="aiTutorOutput">AI tutor output will appear here after service setup configuration.</pre>
+</div>
+<div class="stack-list" id="certificatesList"></div>
+</section>
+
+<section class="panel dashboard-switch-panel hidden" id="crypto-panel">
+<h2>CryptoCurrency</h2>
+<p>Live Luno market prices, 3% SP WorldTech service fee calculation, and Paystack checkout are handled through secure backend routes.</p>
+<div class="stat-grid wallet-stat-grid">
+<div class="stat-box highlighted-box"><span>Provider</span><strong id="cryptoProviderStatus">Checking</strong></div>
+<div class="stat-box highlighted-box"><span>Markets Loaded</span><strong id="cryptoMarketCount">0</strong></div>
+</div>
+<form class="inline-form" id="cryptoQuoteForm">
+<input name="pair" placeholder="Pair e.g. BTCNGN" value="BTCNGN" required/>
+<input name="amount" type="number" min="1" step="0.01" placeholder="Amount to buy" required/>
+<button class="primary" type="submit">Calculate Quote</button>
+</form>
+<pre class="ai-output" id="cryptoQuoteOutput">Crypto quote will appear here.</pre>
+<div class="stack-list" id="cryptoMarketsList"></div>
+</section>
+<section class="panel chat-panel dashboard-switch-panel hidden" id="support-panel">
+<h2>Support Chat</h2>
+<div class="chat-messages" id="chatMessages"></div>
+<form class="inline-form" id="chatForm">
+<input name="message" placeholder="Type your message" required="" type="text"/>
+<button class="primary" type="submit">Send</button>
+</form>
+</section>
+<section class="panel dashboard-switch-panel" data-ai-context="website-knowledge" data-ai-title="Ask SP WorldTech AI" data-sp-ai-widget="" style="margin-top:18px"></section>
+</div>
+</section>
+</main>
+</div>
+<script defer src="./assets/config.js"></script>
+<script defer src="./assets/dashboard.js"></script>
+<script defer src="./assets/ai-agent.js"></script>
+<script defer src="./assets/support-chat.js"></script>
+</body>
+</html>

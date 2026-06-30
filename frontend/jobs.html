@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link href="https://spworldtech.com/jobs.html" rel="canonical"/>
+<meta content="https://spworldtech.com/jobs.html" property="og:url"/>
+<link href="./assets/favicon.png" rel="icon" type="image/png">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Explore professional digital and remote job opportunities through the SP WorldTech Recruitment Portal. Search jobs, apply through your dashboard, and track application status professionally." name="description"/>
+<title>SP WorldTech Recruitment Portal | Real Digital Job Opportunities</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="./assets/styles.css" rel="stylesheet"/>
+</meta></link><meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/><meta content="SP WorldTech, SP WorldTech International Digital Solutions, web application development, software development, digital jobs, coding academy, Banking, crypto exchange, Nigeria tech company, remote jobs, fintech platform" name="keywords"/><meta content="SP WorldTech Recruitment Portal | Real Digital Job Opportunities" property="og:title"/><meta content="Explore professional digital and remote job opportunities through the SP WorldTech Recruitment Portal. Search jobs, apply through your dashboard, and track application status professionally." property="og:description"/><meta content="website" property="og:type"/><meta content="SP WorldTech International Digital Solutions" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="SP WorldTech Recruitment Portal | Real Digital Job Opportunities" name="twitter:title"/><meta content="Explore professional digital and remote job opportunities through the SP WorldTech Recruitment Portal. Search jobs, apply through your dashboard, and track application status professionally." name="twitter:description"/></head>
+<body class="inner-page">
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand brand-link" href="./index.html"><img alt="SP WorldTech logo" class="brand-logo" src="./assets/logo.png"/></a>
+<nav class="main-nav">
+<a href="./index.html">Home</a>
+<a href="./jobs.html">Jobs</a><a href="./giftcards.html">GiftCards</a>
+<a href="./banking.html">Banking</a>
+<a href="./crypto-exchange.html">CryptoCurrency</a>
+<a href="./academy.html">AI Coding Academy</a>
+<a href="./services.html">Services</a>
+<a href="./about.html">About</a>
+<a href="./contact.html">Contact</a>
+<a href="./pricing.html">Pricing</a>
+<a class="nav-btn primary" href="./login.html">UserAccess</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="inner-hero jobs-recruitment-hero" style="--hero-image: url('https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&amp;fit=crop&amp;w=1800&amp;q=80')">
+<div class="inner-hero-overlay"></div>
+<div class="container inner-hero-content">
+<span class="eyebrow">SP WorldTech Recruitment Portal</span>
+<h1>Explore real career opportunities through the SP WorldTech recruitment portal.</h1>
+<p>Browse verified job listings, save opportunities, share jobs, and apply inside SP WorldTech for secure internal review before any client outreach.</p>
+<div class="hero-actions"><a class="primary large plain-anchor-btn" href="#jobsPortal">Browse Jobs</a><a class="secondary large plain-anchor-btn" href="./login.html?next=./dashboard.html#jobs-panel">My Applications</a></div>
+</div>
+</section>
+<section class="content-section job-portal-section" id="jobsPortal">
+<div class="container">
+<div class="section-heading">
+<div><span class="eyebrow dark">Professional Jobs Board</span><h2 class="section-title">Find, save, share, and apply from one portal</h2><p class="section-lead">Applications stay inside SP WorldTech for review. Resumes and documents are not sent automatically to clients.</p></div>
+<a class="primary plain-anchor-btn" href="./login.html?next=./dashboard.html#jobs-panel">Apply from Dashboard</a>
+</div>
+<form class="job-filter-panel" id="jobsFilterForm">
+<input name="q" placeholder="Search job title or keywords"/>
+<input name="company" placeholder="Company"/>
+<input name="skills" placeholder="Skills e.g. React, Node"/>
+<input name="location" placeholder="Location"/>
+<select name="category"><option value="">Category</option><option>Remote Tech Jobs</option><option>Software Development</option><option>Frontend Development</option><option>Platform Development</option><option>Design</option><option>Support</option></select>
+<input name="country" placeholder="Country"/>
+<select name="workMode"><option value="">Work mode</option><option>Remote</option><option>Hybrid</option><option>On-site</option></select>
+<select name="employmentType"><option value="">Employment type</option><option>Full-time</option><option>Part-time</option><option>Contractor</option><option>Internship</option></select>
+<select name="experienceLevel"><option value="">Experience level</option><option>Entry level</option><option>Mid level</option><option>Senior</option><option>Not specified</option></select>
+<input min="0" name="salaryMin" placeholder="Min salary" type="number"/>
+<input min="0" name="salaryMax" placeholder="Max salary" type="number"/>
+<select name="posted"><option value="">Posted anytime</option><option value="today">Posted Today</option><option value="7days">Last 7 Days</option><option value="30days">Last 30 Days</option></select>
+<button class="primary" type="submit">Search Jobs</button>
+<button class="secondary" id="resetJobFilters" type="button">Reset</button>
+</form>
+<div class="status-row"><div class="status-text" id="jobsBoardStatus">Loading real jobs...</div><div class="job-pagination" id="jobsPaginationTop"></div></div>
+<div class="jobs-board-list" id="jobsBoard"></div>
+<div class="job-pagination" id="jobsPagination"></div>
+</div>
+</section>
+<div class="modal-overlay hidden" id="jobPreviewModal"><div class="job-preview-modal job-details-modal"><button class="modal-close" id="closeJobPreview">×</button><div id="jobPreviewContent"></div></div></div>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-brand-block">
+<div class="footer-brand-wrap"><img alt="SP WorldTech logo" class="footer-logo" src="./assets/logo.png"/><div class="footer-brand">SP WorldTech International Digital Solutions</div></div>
+<p>Remote tech jobs, AI-powered coding academy, digital wallet tools, virtual accounts, and business operations support for modern users.</p>
+<div class="footer-badges"><span>Remote Tech Jobs</span><span>AI Coding Academy</span><span>Production Ready</span></div>
+<div aria-label="SP WorldTech social media links" class="footer-social">
+<a aria-label="SP WorldTech on Facebook" href="https://www.facebook.com/spworldtech" rel="noopener noreferrer" target="_blank">Facebook</a>
+<a aria-label="SP WorldTech on Instagram" href="https://www.instagram.com/spworldtech" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a aria-label="SP WorldTech on Twitter" href="https://twitter.com/spworldtech" rel="noopener noreferrer" target="_blank">Twitter</a>
+<a aria-label="SP WorldTech on LinkedIn" href="https://www.linkedin.com/company/spworldtech" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+</div>
+</div>
+<div><h4>Platform</h4><ul class="footer-links"><li><a href="./about.html">About</a></li><li><a href="./how-it-works.html">How It Works</a></li><li><a href="./jobs.html">Jobs</a><a href="./giftcards.html">GiftCards</a></li><li><a href="./academy.html">AI Coding Academy</a></li><li><a href="../review.html">Reviews</a></li></ul></div>
+<div><h4>Services</h4><ul class="footer-links"><li><a href="./services.html">Services</a></li><li><a href="./products.html">Products</a></li><li><a href="./pricing.html">Pricing</a></li><li><a href="./support.html">Support</a></li></ul></div>
+<div><h4>Legal</h4><ul class="footer-links"><li><a href="./faq.html">FAQ</a></li><li><a href="./privacy-policy.html">Privacy Policy</a></li><li><a href="./terms.html">Terms</a></li><li><a href="./contact.html">Contact</a></li></ul></div>
+<div class="footer-contact-card"><h4>Contact SP WorldTech</h4><p><strong>Phone:</strong> <a href="tel:+2349129193069">+2349129193069</a></p><p><strong>Email:</strong> <a href="mailto:support@spworldtech.com">support@spworldtech.com</a></p><p>Web Applications, Software Development, Digital Jobs, AI Academy, Banking, and Crypto Services.</p></div></div>
+<div class="footer-bottom"><div class="container footer-bottom-wrap"><p>© 2026 SP WorldTech. All rights reserved.</p><p>Professional digital jobs, academy, and operations platform.</p></div></div>
+</footer>
+<script src="./assets/config.js"></script>
+<script src="./assets/auth-shared.js"></script>
+<script src="./assets/jobs-page.js"></script>
+<script src="./assets/support-chat.js"></script>
+</body>
+</html>

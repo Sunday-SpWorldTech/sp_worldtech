@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://spworldtech.com/giftcards.html" rel="canonical" />
+  <meta content="https://spworldtech.com/giftcards.html" property="og:url" />
+  <link href="./assets/favicon.png" rel="icon" type="image/png" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>GiftCards Marketplace | SP WorldTech</title>
+  <meta name="description" content="Buy digital GiftCards on SP WorldTech through OpenWebNinja marketplace search. Pay with wallet balance after funding and redeeming SP Token Voucher." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="./assets/styles.css" rel="stylesheet" />
+</head>
+<body class="inner-page giftcards-page">
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a aria-label="SP WorldTech home" class="brand brand-link" href="./index.html"><img alt="SP WorldTech logo" class="brand-logo" src="./assets/logo.png"/></a>
+    <nav class="main-nav">
+      <a href="./index.html">Home</a>
+      <a href="./jobs.html">Jobs</a>
+      <a href="./giftcards.html">GiftCards</a>
+      <a href="./banking.html">Banking</a>
+      <a href="./crypto-exchange.html">CryptoCurrency</a>
+      <a href="./academy.html">AI Coding Academy</a>
+      <a href="./services.html">Services</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./pricing.html">Pricing</a>
+      <a class="nav-btn primary" href="./login.html">UserAccess</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="inner-hero giftcards-hero">
+  <div class="container inner-hero-content">
+    <span class="eyebrow">REAL DIGITAL GIFT CARDS</span>
+    <h1>Professional GiftCards marketplace connected to OpenWebNinja live product APIs.</h1>
+    <p>GiftCards is for selling real gift cards through your chosen API provider. SP Token remains the wallet deposit/withdrawal token flow, separate from this GiftCards page.</p>
+    <div class="hero-actions"><a class="primary large plain-anchor-btn" href="#shop">Shop GiftCards</a><a class="secondary large plain-anchor-btn" href="./dashboard.html#wallet-panel">Fund Wallet with SP Token</a></div>
+  </div>
+</section>
+<section class="content-section light" id="shop">
+  <div class="container giftcard-layout">
+    <article class="feature-panel giftcard-buy-panel">
+      <span class="eyebrow dark">API Marketplace</span>
+      <h2>Buy Real Gift Card</h2>
+      <p>Search live marketplace products through OpenWebNinja. Users buy with dashboard wallet balance after funding/redeeming SP Token Voucher.</p>
+      <form class="product-application-form" id="giftSearchForm">
+        <div class="inline-form">
+          <input name="query" placeholder="Search GiftCards e.g. Razer Gold, Amazon gift card, Steam" value="gift card" />
+          <select name="provider">
+            <option value="all">All providers</option>
+            <option value="ecommerce">E-commerce</option>
+            <option value="productSearch">Product Search</option>
+            <option value="amazon">Amazon</option>
+            <option value="walmart">Walmart</option>
+            <option value="ebay">eBay</option>
+          </select>
+          <button class="secondary" type="submit">Search Live Products</button>
+        </div>
+      </form>
+      <p class="status-text" id="giftSearchStatus"></p>
+      <div class="stack-list" id="giftProductsList"></div>
+      <form class="product-application-form" id="giftCardOrderForm">
+        <input name="brand" placeholder="Brand e.g. Razer Gold, Amazon, Steam" required />
+        <input name="productTitle" placeholder="Selected GiftCard product title" required />
+        <input name="providerProductId" placeholder="Provider product ID from OpenWebNinja result" required />
+        <input name="provider" type="hidden" value="openwebninja" />
+        <input name="productUrl" type="hidden" />
+        <input name="image" type="hidden" />
+        <select name="country" required><option value="Global">Global</option><option value="Nigeria">Nigeria</option><option value="United States">United States</option><option value="United Kingdom">United Kingdom</option><option value="Ghana">Ghana</option><option value="South Africa">South Africa</option><option value="Other">Other supported country</option></select>
+        <select name="currency"><option value="USD">USD Wallet</option><option value="NGN">NGN Wallet</option></select>
+        <input name="amount" min="1" step="0.01" type="number" placeholder="GiftCard amount to debit from wallet" required />
+        <input name="quantity" min="1" step="1" type="number" value="1" placeholder="Quantity" />
+        <input name="deliveryEmail" type="email" placeholder="Delivery email" />
+        <button class="primary product-submit-btn" type="submit">Buy GiftCard With Wallet Balance</button>
+      </form>
+      <p class="status-text" id="giftCardStatus"></p>
+      <div class="stack-list" id="giftApiStatus"></div>
+    </article>
+    <article class="giftcard-display-card">
+      <div class="giftcard-shine"></div>
+      <div class="giftcard-top"><strong>SP WORLDTECH</strong><span>LIVE API</span></div>
+      <div class="giftcard-center"><span>GiftCards</span><h3>Digital Store</h3><p>OpenWebNinja marketplace</p></div>
+      <div class="giftcard-bottom"><span>Wallet → Provider API</span><strong>Codes / Pins / Vouchers</strong></div>
+    </article>
+  </div>
+</section>
+<section class="content-section" id="orders">
+  <div class="container split-grid">
+    <article class="feature-panel soft-panel">
+      <h2>How GiftCards works</h2>
+      <ul class="pricing-features">
+        <li>User funds wallet with SP Token deposit.</li>
+        <li>User selects a real gift card brand and country.</li>
+        <li>SP WorldTech debits wallet balance and saves the GiftCard order for admin/staff processing.</li>
+        <li>Admin/staff can complete, fail, cancel, or add fulfilment notes from the operations dashboard.</li>
+        <li>Orders are saved for user and admin review.</li>
+      </ul>
+    </article>
+    <article class="feature-panel">
+      <span class="eyebrow dark">My GiftCard Orders</span>
+      <h2>Order history</h2>
+      <div class="stack-list" id="giftOrdersHistory"></div>
+    </article>
+  </div>
+</section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><div class="footer-brand-wrap"><img alt="SP WorldTech logo" class="footer-logo" src="./assets/logo.png"/><div class="footer-brand">SP WorldTech International Digital Solutions</div></div><p>Professional SP Token wallet funding, GiftCards, crypto, banking and digital product workflows.</p></div><div class="footer-contact-card"><h4>Contact SP WorldTech</h4><p><strong>Phone:</strong> <a href="tel:+2349129193069">+2349129193069</a></p><p><strong>Email:</strong> <a href="mailto:support@spworldtech.com">support@spworldtech.com</a></p></div></div><div class="footer-bottom"><div class="container footer-bottom-wrap"><p>© 2026 SP WorldTech. All rights reserved.</p></div></div></footer>
+<script defer src="./assets/config.js"></script>
+<script defer src="./assets/giftcards.js"></script>
+<script defer src="./assets/ai-agent.js"></script>
+<script defer src="./assets/support-chat.js"></script>
+</body>
+</html>

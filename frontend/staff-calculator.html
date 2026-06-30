@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link href="https://spworldtech.com/staff-calculator.html" rel="canonical"/>
+<meta content="https://spworldtech.com/staff-calculator.html" property="og:url"/>
+<link href="./assets/favicon.png" rel="icon" type="image/png">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Staff Calculator | SP WorldTech International Digital Solutions</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="./assets/styles.css" rel="stylesheet"/>
+</meta></link><meta content="Staff Calculator from SP WorldTech International Digital Solutions for web applications, software development, digital jobs, academy, wallet services, crypto services, and professional support." name="description"/><meta content="noindex, nofollow" name="robots"/><meta content="SP WorldTech, SP WorldTech International Digital Solutions, web application development, software development, digital jobs, coding academy, Banking, crypto exchange, Nigeria tech company, remote jobs, fintech platform" name="keywords"/><meta content="Staff Calculator | SP WorldTech International Digital Solutions" property="og:title"/><meta content="Staff Calculator from SP WorldTech International Digital Solutions for web applications, software development, digital jobs, academy, wallet services, crypto services, and professional support." property="og:description"/><meta content="website" property="og:type"/><meta content="SP WorldTech International Digital Solutions" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="Staff Calculator | SP WorldTech International Digital Solutions" name="twitter:title"/><meta content="Staff Calculator from SP WorldTech International Digital Solutions for web applications, software development, digital jobs, academy, wallet services, crypto services, and professional support." name="twitter:description"/></head>
+<body class="calculator-access-page" data-operations-role="staff">
+<main class="ops-calc-page">
+<section aria-label="Calculator access card" class="ops-calc-card">
+<div class="ops-calc-header">
+<a class="ops-calc-brand" href="./index.html">
+<img alt="SP WorldTech logo" class="ops-calc-logo" src="./assets/logo.png"/>
+<div class="ops-calc-brand-copy">
+
+<span>STAFF ACCESS</span>
+</div>
+</a>
+</div>
+<div class="ops-calc-display" id="calculatorScreen">0</div>
+<div aria-label="Live calculator keypad" class="ops-calc-grid">
+<button class="ops-key ops-key-action" data-calc="clear" type="button">C</button>
+<button class="ops-key ops-key-action" data-calc="back" type="button">DEL</button>
+<button class="ops-key ops-key-action" data-calc="÷" type="button">÷</button>
+<button class="ops-key ops-key-action" data-calc="×" type="button">×</button>
+<button class="ops-key" data-calc="7" type="button">7</button>
+<button class="ops-key" data-calc="8" type="button">8</button>
+<button class="ops-key" data-calc="9" type="button">9</button>
+<button class="ops-key ops-key-action" data-calc="-" type="button">−</button>
+<button class="ops-key" data-calc="4" type="button">4</button>
+<button class="ops-key" data-calc="5" type="button">5</button>
+<button class="ops-key" data-calc="6" type="button">6</button>
+<button class="ops-key ops-key-action" data-calc="+" type="button">+</button>
+<button class="ops-key" data-calc="1" type="button">1</button>
+<button class="ops-key" data-calc="2" type="button">2</button>
+<button class="ops-key" data-calc="3" type="button">3</button>
+<button class="ops-key ops-key-action" data-calc="=" type="button">=</button>
+<button class="ops-key ops-key-wide" data-calc="0" type="button">0</button>
+<button class="ops-key" data-calc="." type="button">.</button>
+<button class="ops-key ops-key-action" data-calc="pin" id="openPinGate" type="button">PIN</button>
+</div>
+<p class="ops-calc-helper">Create a PIN first. A Token ID will be generated on first access.</p>
+<label class="ops-token-label" for="createdTokenId">Token ID</label>
+<div aria-live="polite" class="ops-token-box" id="tokenResultBox">
+<strong id="createdTokenId">Generated after first PIN setup</strong>
+</div>
+<div class="ops-calc-actions">
+<button class="ops-action-primary" id="pinActionBtn" type="button">Create / Enter PIN</button>
+<button class="ops-action-secondary" id="removeLocalPinBtn" type="button">Remove Local PIN</button>
+</div>
+<p class="status-text ops-status-text" id="calcStatus"></p>
+</section>
+</main>
+<div class="calculator-gate-overlay hidden" id="pinGateOverlay">
+<section aria-labelledby="pinGateTitle" aria-modal="true" class="calculator-gate-box ops-gate-box" role="dialog">
+<div class="ops-gate-top">
+<div>
+<p class="ops-gate-eyebrow">Secure access</p>
+<h2 id="pinGateTitle">Staff Support calculator access</h2>
+</div>
+<button aria-label="Close" class="ops-gate-close" id="closePinGate" type="button">×</button>
+</div>
+<div class="ops-gate-tabs">
+<button class="ops-gate-tab active" data-gate-tab="create" type="button">Create PIN</button>
+<button class="ops-gate-tab" data-gate-tab="login" type="button">Enter PIN</button>
+</div>
+<div class="staff-form column-form ops-gate-form" data-gate-panel="create" id="createPinPanel">
+<h3>Create Staff PIN</h3>
+<input id="fullNameInput" name="fullName" placeholder="Full name" required=""/>
+<input id="createPinInput" inputmode="numeric" maxlength="8" name="pin" pattern="[0-9]{4,8}" placeholder="Create 4-8 digit PIN" required="" type="password"/>
+<input id="confirmPinInput" inputmode="numeric" maxlength="8" name="confirmPin" pattern="[0-9]{4,8}" placeholder="Confirm PIN" required="" type="password"/>
+<input id="setupCodeInput" name="setupCode" placeholder="Setup code, if required" type="password"/>
+<button class="primary" id="createPinSubmit" type="button">Create PIN &amp; Generate Token ID</button>
+</div>
+<div class="staff-form column-form ops-gate-form hidden" data-gate-panel="login" id="pinLoginPanel">
+<h3>Open Existing Staff Access</h3>
+<input id="tokenIdInput" name="tokenId" placeholder="Enter your Token ID" required=""/>
+<input id="loginPinInput" inputmode="numeric" maxlength="8" name="pin" pattern="[0-9]{4,8}" placeholder="Enter PIN" required="" type="password"/>
+<button class="primary" id="pinLoginSubmit" type="button">Open Dashboard</button>
+</div>
+<div class="ops-success-box hidden" id="pinSuccessBox">
+<span>Token ID generated</span>
+<strong id="modalCreatedTokenId">SP-WORLDTECH-000000</strong>
+<p>Save this Token ID carefully. You will use it together with your PIN for future login.</p>
+<div class="calculator-gate-actions">
+<button class="primary" id="openDashboardBtn" type="button">Open Staff Dashboard</button>
+<button class="secondary" id="closeSuccessBtn" type="button">Close</button>
+</div>
+</div>
+<p class="ops-gate-foot"><a href="./admin-calculator.html">Admin Calculator</a> · <a href="./login.html">UserAccess</a></p>
+</section>
+</div>
+<script src="./assets/config.js"></script>
+<script src="./assets/operations-calculator.js"></script>
+<script src="./assets/support-chat.js"></script>
+</body>
+</html>
